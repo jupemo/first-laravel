@@ -12,5 +12,22 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+Route::get('/login', function () {
+    return view('auth.login');
+});
+Route::get('/logout', function () {
+    return 'Logout usuario';
+});
+Route::get('/catalog', function () {
+    return view('catalog.index');
+});
+Route::get('/catalog/show/{id}', function () {
+    return view('catalog.show');    
+});
+Route::get('/catalog/edit/{id}', function () {
+    return view('catalog.edit');    
+});
+
+
