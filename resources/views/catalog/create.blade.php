@@ -15,25 +15,29 @@
 
 			<div class="panel-body" style="padding:30px">
 			
-				{{-- TODO: Abrir el formulario e indicar el método POST --}}
+				<form action="" method="post">
 				
-					{{-- TODO: Protección contra CSRF --}}
+					{{ csrf_field() }}
     
     				<div class="form-group">
     					<label for="title">Título</label>
     					<input type="text" name="title" id="title" class="form-control">
 					</div>
-
+                    
 					<div class="form-group">
-						{{-- TODO: Completa el input para el año --}}
+                        <label for="year">Year</label>
+                        <input type="text" name="title" id="year" class="form-control">
 					</div>
-
+                    
 					<div class="form-group">
-						{{-- TODO: Completa el input para el director --}}
+                        <label for="poster">Poster:</label>
+                        <input type="text" name="title" id="poster" class="form-control">
 					</div>
-
+                    
 					<div class="form-group">
-						{{-- TODO: Completa el input para el poster --}}
+                        <label for="director">director:</label>
+                        <input type="text" name="title" id="director" class="form-control">
+						
 					</div>
 
 					<div class="form-group">
@@ -47,12 +51,10 @@
 						</button>
 					</div>
 
-				{{-- TODO: Cerrar formulario --}}
+				</form>
 
 			</div>
 		</div>
 	</div>
 </div>
-@stop
-
 @stop
