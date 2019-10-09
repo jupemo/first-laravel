@@ -19,7 +19,7 @@
             @else
             <a class="btn btn-primary">Rent</a>
             @endif
-            <a class="btn btn-warning">Edit film</a>
+            <a class="btn btn-warning"  href="{{ url('/catalog/edit/' . $id ) }}">Edit film</a>
             <a class="btn btn-secondary">Go Back</a>
 
 
