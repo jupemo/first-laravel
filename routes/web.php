@@ -26,7 +26,7 @@ Route::get('/catalog/show/{id}', 'CatalogController@getShow');
 
 Route::get('/catalog/edit/{id}', 'CatalogController@getEdit');
 
-Route::get('/catalog/create', 'CatalogController@getEdit');
+Route::get('/catalog/create', 'CatalogController@getCreate');
 
 
 
