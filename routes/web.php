@@ -11,23 +11,22 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'HomeController@getHome');
+
 Route::get('/login', function () {
     return view('auth.login');
 });
+
 Route::get('/logout', function () {
     return 'Logout usuario';
 });
-Route::get('/catalog', function () {
-    return view('catalog.index');
-});
-Route::get('/catalog/show/{id}', function () {
-    return view('catalog.show');    
-});
-Route::get('/catalog/edit/{id}', function () {
-    return view('catalog.edit');    
-});
+Route::get('/catalog', 'CatalogController@getIndez');
 
+Route::get('/catalog/show/{id}', 'CatalogController@getShow');    
+
+Route::get('/catalog/edit/{id}', 'CatalogController@getEdit');
+
+Route::get('/catalog/create', 'CatalogController@getEdit');
+
+Route::get()
 
