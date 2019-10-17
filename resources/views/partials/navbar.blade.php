@@ -16,7 +16,7 @@
     </button>
   
     <!-- Navbar links -->
-    @if( true || Auth::check() )
+    @if( Auth::check() )
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item" {{ Request::is('catalog*') && !Request::is('catalog/create')? ' class=active' : ''}}>
